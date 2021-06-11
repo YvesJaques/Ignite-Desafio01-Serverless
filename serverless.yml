@@ -31,6 +31,17 @@ functions:
           path: /createTodo/{user_id}
           method: POST
           cors: true
+  listTodos:
+    handler: src/functions/listTodos.handle
+    events:
+      - http:
+          path: /listTodos/{user_id}
+          method: GET
+          cors: true
+    iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - dynamodb:Query          
 
 resources:
   Resources:
