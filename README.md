@@ -1,3 +1,7 @@
+# Ignite - Desafio 01 -  Serverless
+
+Desafio do último capítulo do curso Ignite da rocketseat. Trata-se da implementação de uma aplicação de to-dos(lista de afazeres) utilizando serverless e dynamodb. Abaixo seguem as instruções padrão para instalação e utilização desse projeto.
+
 # Serverless - AWS Node.js Typescript
 
 This project has been generated using the `aws-nodejs-typescript` template from the [Serverless framework](https://www.serverless.com/).
