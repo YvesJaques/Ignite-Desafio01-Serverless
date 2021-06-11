@@ -23,6 +23,15 @@ provider:
   name: aws
   runtime: nodejs14.x  
 
+functions:
+  createTodo:
+    handler: src/functions/createTodo.handle
+    events:
+      - http:
+          path: /createTodo/{user_id}
+          method: POST
+          cors: true
+
 resources:
   Resources:
     dbCertificateUsers:
